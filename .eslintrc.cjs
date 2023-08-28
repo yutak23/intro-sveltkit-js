@@ -16,8 +16,18 @@ module.exports = {
 			files: ['*.svelte'],
 			parser: 'svelte-eslint-parser',
 			extends: ['plugin:svelte/recommended'],
-			rules: {}
+			rules: { 'import/prefer-default-export': 'off', 'import/no-mutable-exports': 'warn' }
 		}
 	],
+	settings: {
+		'import/resolver': {
+			'eslint-import-resolver-custom-alias': {
+				alias: {
+					'@': './src'
+				},
+				extensions: ['.js', '.svelte']
+			}
+		}
+	},
 	rules: { 'import/no-extraneous-dependencies': 'off', 'import/no-unresolved': 'warn' }
 };
