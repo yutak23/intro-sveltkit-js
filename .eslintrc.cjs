@@ -29,5 +29,9 @@ module.exports = {
 			}
 		}
 	},
-	rules: { 'import/no-extraneous-dependencies': 'off', 'import/no-unresolved': 'warn' }
+	rules: {
+		'import/no-extraneous-dependencies': 'off',
+		'import/no-unresolved': 'warn',
+		'import/prefer-default-export': 'off'
+	}
 };
