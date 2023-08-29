@@ -1,1 +1,5 @@
-<h1>hello world</h1>
+<script>
+	export let data;
+</script>
+
+<h1>Hello {data.visited ? 'friend' : 'stranger'}!</h1>
