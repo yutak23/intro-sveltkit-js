@@ -23,7 +23,8 @@ module.exports = {
 		'import/resolver': {
 			'eslint-import-resolver-custom-alias': {
 				alias: {
-					'@': './src'
+					'@': './src',
+					$lib: './src/lib'
 				},
 				extensions: ['.js', '.svelte']
 			}
