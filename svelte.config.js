@@ -9,6 +9,10 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@': '/src'
+		},
+		version: {
+			name: Date.now().toString(),
+			pollInterval: 5000
 		}
 	}
 };
